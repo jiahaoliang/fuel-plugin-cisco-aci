@@ -6,7 +6,7 @@ class cisco_aci::gbp_and_mapping (
     $mechanism_drivers  = 'openvswitch',
     $policy_drivers     = 'implicit_policy,resource_mapping',
 ){
-    include 'apic::api'
+#    include 'apic::api'
 
     case $role {
         /controller/: {
