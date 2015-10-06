@@ -2,7 +2,7 @@
 class cisco_aci::gbp_and_mapping (
     $ha_prefix          = '',
     $role               = 'compute',
-    $service_plugins    = 'neutron.services.l3_router.l3_router_plugin.L3RouterPlugin,gbpservice.neutron.services.grouppolicy.plugin.GroupPolicyPlugin,gbpservice.neutron.services.servicechain.servicechain_plugin.ServiceChainPlugin',
+    $service_plugins    = 'neutron.services.l3_router.l3_router_plugin.L3RouterPlugin,group_policy,servicechain',
     $mechanism_drivers  = 'openvswitch',
     $policy_drivers     = 'implicit_policy,resource_mapping',
 ){
